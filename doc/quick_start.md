@@ -1,6 +1,20 @@
 # Quick start
 This quick start allows you to collect data in the MuJoCo simulation and train and rollout the ACT policy.
 
+## Environment Construction
+If you use conda, you can set up your environment with the following steps.  
+> [!TIP]
+> Isaac Gym supports only Python 3.6, 3.7 and 3.8. In Ubuntu 22.04, use Python 3.8 with pyenv.
+```console
+$ conda create -n robo_mani_base python=3.9
+$ conda activate robo_mani_base
+$ conda install numpy=1.26
+
+$ conda install -c conda-forge ffmpeg
+$ pip uninstall torchcodec
+$ pip install torchcodec==0.3.0
+```
+
 ## Install
 Install RoboManipBaselines:
 ```console
